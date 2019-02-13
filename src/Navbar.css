@@ -24,28 +24,11 @@
 .Navbar-logo {
   display: block;
   border-radius: 50%;
-  font-family: Inconsolata, Menlo, Monaco, Consolas, monospace;
+  font-family: Inconsolata, Menlo, Consolas, monospace;
   font-weight: bold;
   text-align: center;
   grid-area: logo;
   justify-self: start;
-}
-
-.Navbar-toggler {
-  font-size: 1.25rem;
-  line-height: 1;
-  font-family: Arial, sans-serif;
-  border: none;
-  cursor: pointer;
-  margin: 0.5625rem 0;
-  grid-area: toggler;
-  justify-self: end;
-}
-
-.Navbar-toggler:active,
-.Navbar-toggler:focus,
-.Navbar-toggler:hover {
-  outline: 0;
 }
 
 .Navbar-nav {
@@ -90,9 +73,11 @@
 }
 
 .Navbar-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-size: 1.25rem;
-  line-height: calc(2.25rem - 2px);
   width: 2.25rem;
   height: 2.25rem;
   margin: 0.5625rem 0;
@@ -107,7 +92,24 @@
 .Navbar-btn:focus {
   background-color: #fff;
   color: #333;
-  border: solid 1px #333;
+  border: solid 2px #333;
+}
+
+.Navbar-toggler {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  margin: 0.5625rem 0;
+  grid-area: toggler;
+  justify-self: end;
+}
+
+.Navbar-toggler:active,
+.Navbar-toggler:focus,
+.Navbar-toggler:hover {
+  outline: 0;
 }
 
 @media (min-width: 400px) {

@@ -34,7 +34,7 @@ const Navbar = ({ fixed, links }) => {
           aria-expanded={isExpanded}
           aria-controls="nav"
         >
-          <span>&equiv;</span>
+          <span>☰</span>
         </button>
         <nav className={navClasses} id="nav" aria-hidden={!isExpanded}>
           <ul className="Navbar-list">{listItems}</ul>
