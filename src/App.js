@@ -1,23 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navbar from './Navbar';
 import './App.css';
+
+const links = [
+  { href: '#work', label: 'work', onClick: () => console.log('scroll to #work') },
+  { href: '#about', label: 'about', onClick: () => console.log('scroll to #about') },
+  { href: '#contact', label: 'contact', onClick: () => console.log('scroll to #contact') },
+];
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+    <Navbar fixed links={links} />
   </div>
 );
 
