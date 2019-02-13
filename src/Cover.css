@@ -1,0 +1,32 @@
+.Cover {
+  height: 100vh;
+  padding-top: 3.375rem;
+  display: flex;
+}
+
+.Cover-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Cover-header {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  font-weight: normal;
+  font-size: 2.25rem;
+}
+
+.Cover-lead {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.Cover-line {
+  height: 0;
+  border: 0;
+  border-top: solid 1px #555;
+  margin: 1.25rem 0;
+}
