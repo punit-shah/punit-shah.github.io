@@ -1,4 +1,5 @@
 import React from 'react';
+import Error from './Error';
 import './Cover.css';
 
 const Cover = () => (
@@ -7,6 +8,7 @@ const Cover = () => (
       <h1 className="Cover-header">{'{punit shah}'}</h1>
       <p className="Cover-lead">Software engineer</p>
       <hr className="Cover-line" />
+      <Error />
     </div>
   </section>
 );

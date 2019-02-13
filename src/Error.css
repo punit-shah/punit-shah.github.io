@@ -1,0 +1,80 @@
+.Error {
+  margin: 1rem 2.5rem;
+}
+
+.Error-image {
+  position: relative;
+  width: 6.5rem;
+  height: 6.25rem;
+  margin: auto;
+}
+
+.Error-image img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.Error-caption {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+}
+
+.Error-bubble {
+  position: absolute;
+  bottom: 6.25rem;
+  left: 2.1875rem;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  font-size: 0.75rem;
+  text-align: center;
+  word-wrap: break-word;
+  width: 9.25rem;
+  border-radius: 3px;
+  color: #eee;
+  background-color: #000;
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+.Error-bubble-message {
+  padding: 0.5rem;
+}
+
+.Error-bubble:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0.5rem solid transparent;
+  position: absolute;
+  left: 1.1875rem;
+  bottom: -1rem;
+  border-top: solid 0.5rem #000;
+}
+
+.Error-bubble-hidden {
+  opacity: 0;
+}
+
+.Error-bubble-marquee .Error-bubble-message {
+  overflow: hidden;
+}
+
+.Error-bubble-marquee span {
+  transform: translateX(-100%);
+  display: table;
+  white-space: nowrap;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import './Navbar.css';
 
 const Navbar = ({ fixed, links }) => {
-  const [expanded, setExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const navClasses = classNames('Navbar-nav', {
-    'Navbar-nav-expanded': expanded,
+    'Navbar-nav-expanded': isExpanded,
   });
 
   const listItems = links.map((link) => (
@@ -30,13 +30,13 @@ const Navbar = ({ fixed, links }) => {
         </a>
         <button
           className="Navbar-toggler Navbar-btn"
-          onClick={() => setExpanded(prevExpanded => !prevExpanded)}
-          aria-expanded={expanded}
+          onClick={() => setIsExpanded(prevIsExpanded => !prevIsExpanded)}
+          aria-expanded={isExpanded}
           aria-controls="nav"
         >
           <span>&equiv;</span>
         </button>
-        <nav className={navClasses} id="nav" aria-hidden={!expanded}>
+        <nav className={navClasses} id="nav" aria-hidden={!isExpanded}>
           <ul className="Navbar-list">{listItems}</ul>
         </nav>
       </div>
