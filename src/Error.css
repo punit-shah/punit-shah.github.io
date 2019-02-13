@@ -17,8 +17,7 @@
 }
 
 .Error-caption {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 0.875rem;
   padding: 0.5rem;
 }
@@ -27,8 +26,7 @@
   position: absolute;
   bottom: 6.25rem;
   left: 2.1875rem;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 0.75rem;
   text-align: center;
   word-wrap: break-word;

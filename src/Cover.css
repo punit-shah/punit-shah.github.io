@@ -13,15 +13,22 @@
 }
 
 .Cover-header {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-weight: normal;
   font-size: 2.25rem;
+  text-transform: lowercase;
+}
+.Cover-header::before {
+  content: '{';
+}
+.Cover-header::after {
+  content: '}';
 }
 
 .Cover-lead {
-  font-size: 1.25rem;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
 }
 
 .Cover-line {
