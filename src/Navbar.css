@@ -57,19 +57,20 @@
 
 .Navbar-link {
   display: block;
-  text-transform: uppercase;
 }
 
 .Navbar-link > a {
   display: block;
   border: 0;
   padding: 1rem 0.5rem;
+  color: #333;
+  font-weight: normal;
 }
 
 .Navbar-link > a:active,
 .Navbar-link > a:focus,
 .Navbar-link > a:hover {
-  color: #aaa;
+  background-color: #eee;
 }
 
 .Navbar-btn {
@@ -141,5 +142,12 @@
   .Navbar-list {
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  .Navbar-link > a:active,
+  .Navbar-link > a:focus,
+  .Navbar-link > a:hover {
+    background-color: unset;
+    border-bottom: solid 2px #333;
   }
 }
