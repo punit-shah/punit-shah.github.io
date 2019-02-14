@@ -4,8 +4,7 @@
 
 .Error-image {
   position: relative;
-  width: 6.5rem;
-  height: 6.25rem;
+  max-width: 435px;
   margin: auto;
 }
 
@@ -24,18 +23,18 @@
 
 .Error-bubble {
   position: absolute;
-  bottom: 6.25rem;
-  left: 2.1875rem;
+  bottom: 14.5rem;
+  left: 12rem;
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 0.75rem;
   text-align: center;
   word-wrap: break-word;
-  width: 9.25rem;
+  width: 10rem;
   border-radius: 3px;
   color: #eee;
   background-color: #000;
   opacity: 0.9;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in;
 }
 
 .Error-bubble-message {
