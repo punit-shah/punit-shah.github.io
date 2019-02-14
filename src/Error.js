@@ -55,7 +55,9 @@ const Error = () => {
 
             setErrorMessage(message);
             setIsBubbleHidden(false);
-            setBubbleTimeout(window.setTimeout(() => setIsBubbleHidden(true), delay));
+            setBubbleTimeout(
+              window.setTimeout(() => setIsBubbleHidden(true), delay)
+            );
           }}
         />
         {bubble}

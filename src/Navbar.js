@@ -6,20 +6,21 @@ import './Navbar.css';
 const Navbar = ({ fixed, links }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const headerClasses = classNames('Navbar', { 'Navbar-fixed': fixed });
   const navClasses = classNames('Navbar-nav', {
     'Navbar-nav-expanded': isExpanded,
   });
 
-  const listItems = links.map((link) => (
-    <li className="Navbar-link" key={link.label}>
-      <a href={link.href} onClick={link.onClick}>
-        {link.label}
+  const listItems = links.map(({ href, label, onClick }) => (
+    <li className="Navbar-link" key={label}>
+      <a href={href} onClick={onClick}>
+        {label}
       </a>
     </li>
   ));
 
   return (
-    <header className={classNames('Navbar', { 'Navbar-fixed': fixed })}>
+    <header className={headerClasses}>
       <div className="Navbar-container container">
         <a
           className="Navbar-logo Navbar-btn"
@@ -28,6 +29,7 @@ const Navbar = ({ fixed, links }) => {
         >
           <span>:P</span>
         </a>
+
         <button
           className="Navbar-toggler Navbar-btn"
           onClick={() => setIsExpanded(prevIsExpanded => !prevIsExpanded)}
@@ -36,6 +38,7 @@ const Navbar = ({ fixed, links }) => {
         >
           <span>☰</span>
         </button>
+
         <nav className={navClasses} id="nav" aria-hidden={!isExpanded}>
           <ul className="Navbar-list">{listItems}</ul>
         </nav>
@@ -46,6 +49,10 @@ const Navbar = ({ fixed, links }) => {
 
 Navbar.propTypes = {
   fixed: PropTypes.bool,
+  links: PropTypes.array.isRequired,
+};
+Navbar.defaultProps = {
+  fixed: false,
 };
 
 export default Navbar;
