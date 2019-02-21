@@ -13,7 +13,13 @@ const Navbar = ({ fixed, links }) => {
 
   const listItems = links.map(({ href, label, onClick }) => (
     <li className="Navbar-link" key={label}>
-      <a href={href} onClick={onClick}>
+      <a
+        href={href}
+        onClick={() => {
+          onClick();
+          setIsExpanded(false);
+        }}
+      >
         {label}
       </a>
     </li>
