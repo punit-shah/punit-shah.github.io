@@ -55,6 +55,7 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
           onClick={() => setIsExpanded(prevIsExpanded => !prevIsExpanded)}
           aria-expanded={isExpanded}
           aria-controls="nav"
+          aria-label="Toggle navigation."
         >
           <span>☰</span>
         </button>
