@@ -73,6 +73,10 @@
   background-color: #eee;
 }
 
+.Navbar-link-active > a {
+  font-weight: bold;
+}
+
 .Navbar-btn {
   display: flex;
   justify-content: center;
@@ -152,6 +156,10 @@
   .Navbar-link > a:focus,
   .Navbar-link > a:hover {
     background-color: unset;
+    border-bottom: solid 2px #333;
+  }
+
+  .Navbar-link-active > a {
     border-bottom: solid 2px #333;
   }
 }

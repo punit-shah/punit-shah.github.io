@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import Cover from './sections/Cover';
 import About from './sections/About';
@@ -22,12 +22,16 @@ const navbarLinks = [
   },
 ];
 
-const App = () => (
-  <div className="App">
-    <Navbar fixed links={navbarLinks} />
-    <Cover />
-    <About />
-  </div>
-);
+const App = () => {
+  const sectionRefs = [useRef(null), useRef(null)];
+
+  return (
+    <div className="App">
+      <Navbar fixed links={navbarLinks} sectionRefs={sectionRefs} />
+      <Cover ref={sectionRefs[0]} />
+      <About ref={sectionRefs[1]} />
+    </div>
+  );
+};
 
 export default App;

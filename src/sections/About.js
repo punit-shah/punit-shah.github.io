@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import CodeString from '../components/CodeString';
 import CodeList from '../components/CodeList';
 import './About.css';
 
-const About = () => (
-  <section className="About" id="about">
+const About = forwardRef((props, ref) => (
+  <section className="About" id="about" ref={ref}>
     <div className="About-container container">
       <h2 className="About-heading">About</h2>
 
@@ -44,6 +44,6 @@ const About = () => (
       </dl>
     </div>
   </section>
-);
+));
 
 export default About;

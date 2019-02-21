@@ -1,29 +1,43 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import useScrollSpy from '../hooks/useScrollSpy';
 import './Navbar.css';
 
-const Navbar = ({ fixed, links }) => {
+const Navbar = ({ fixed, links, sectionRefs }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+
+  const activeSectionId = useScrollSpy({
+    sectionRefs,
+    offset: 59,
+    defaultActiveSectionId: 'cover',
+  });
 
   const headerClasses = classNames('Navbar', { 'Navbar-fixed': fixed });
   const navClasses = classNames('Navbar-nav', {
     'Navbar-nav-expanded': isExpanded,
   });
 
-  const listItems = links.map(({ href, label, onClick }) => (
-    <li className="Navbar-link" key={label}>
-      <a
-        href={href}
-        onClick={() => {
-          onClick();
-          setIsExpanded(false);
-        }}
-      >
-        {label}
-      </a>
-    </li>
-  ));
+  const listItems = links.map(({ href, label, onClick }) => {
+    const isActive = href === `#${activeSectionId}`;
+    const linkClasses = classNames('Navbar-link', {
+      'Navbar-link-active': isActive,
+    });
+
+    return (
+      <li className={linkClasses} key={label}>
+        <a
+          href={href}
+          onClick={() => {
+            onClick();
+            setIsExpanded(false);
+          }}
+        >
+          {label}
+        </a>
+      </li>
+    );
+  });
 
   return (
     <header className={headerClasses}>
@@ -55,7 +69,16 @@ const Navbar = ({ fixed, links }) => {
 
 Navbar.propTypes = {
   fixed: PropTypes.bool,
-  links: PropTypes.array.isRequired,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      onClick: PropTypes.func,
+    })
+  ).isRequired,
+  sectionRefs: PropTypes.arrayOf(
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) })
+  ).isRequired,
 };
 Navbar.defaultProps = {
   fixed: false,
