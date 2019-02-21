@@ -19,16 +19,16 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
     'Navbar-nav-expanded': isExpanded,
   });
 
-  const listItems = links.map(({ href, label }) => {
+  const listItems = links.map(({ href, text }, index) => {
     const isActive = href === `#${activeSectionId}`;
     const linkClasses = classNames('Navbar-link', {
       'Navbar-link-active': isActive,
     });
 
     return (
-      <li className={linkClasses} key={label}>
+      <li className={linkClasses} key={index}>
         <AnchorLink href={href} onClick={() => setIsExpanded(false)}>
-          {label}
+          {text}
         </AnchorLink>
       </li>
     );
@@ -68,7 +68,7 @@ Navbar.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.shape({
       href: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
     })
   ).isRequired,
   sectionRefs: PropTypes.arrayOf(

@@ -7,18 +7,15 @@ import './App.css';
 const navbarLinks = [
   {
     href: '#about',
-    label: 'about',
-    onClick: () => console.log('scroll to #about'),
+    text: 'about',
   },
   {
     href: '#work',
-    label: 'work',
-    onClick: () => console.log('scroll to #work'),
+    text: 'work',
   },
   {
     href: '#contact',
-    label: 'contact',
-    onClick: () => console.log('scroll to #contact'),
+    text: 'contact',
   },
 ];
 
