@@ -1,0 +1,59 @@
+.CodeList-object,
+.CodeList-array {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.CodeList-object::before,
+.CodeList-object::after,
+.CodeList-array::before,
+.CodeList-array::after {
+  color: #b48dac;
+}
+.CodeList-object::before {
+  content: '{';
+}
+.CodeList-object::after {
+  content: '}';
+}
+.CodeList-array::before {
+  content: '[';
+}
+.CodeList-array::after {
+  content: ']';
+}
+
+.CodeList-array-element {
+  display: inline;
+}
+
+.CodeList-object-prop::before {
+  content: '\00a0\00a0';
+}
+.CodeList-object-prop::after,
+.CodeList-array-element::after {
+  content: ', ';
+}
+.CodeList-object-prop:last-of-type::after,
+.CodeList-array-element:last-of-type::after {
+  content: '';
+}
+
+.CodeList-object-prop > dl {
+  display: inline;
+  margin: 0;
+}
+
+.CodeList-object-key {
+  display: inline;
+  color: #8fbcbb;
+}
+.CodeList-object-key::after {
+  content: ': ';
+  color: #e5e9f0;
+}
+
+.CodeList-object-value {
+  display: inline;
+  margin: 0;
+}

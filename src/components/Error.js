@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import './Error.css';
-import errorImg from './img/error.png';
+import errorImg from '../img/error.png';
 
 const getErrorMessage = () => {
   const messages = [
