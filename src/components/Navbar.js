@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useScrollSpy from '../hooks/useScrollSpy';
 import './Navbar.css';
 
@@ -18,7 +19,7 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
     'Navbar-nav-expanded': isExpanded,
   });
 
-  const listItems = links.map(({ href, label, onClick }) => {
+  const listItems = links.map(({ href, label }) => {
     const isActive = href === `#${activeSectionId}`;
     const linkClasses = classNames('Navbar-link', {
       'Navbar-link-active': isActive,
@@ -26,15 +27,9 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
 
     return (
       <li className={linkClasses} key={label}>
-        <a
-          href={href}
-          onClick={() => {
-            onClick();
-            setIsExpanded(false);
-          }}
-        >
+        <AnchorLink href={href} onClick={() => setIsExpanded(false)}>
           {label}
-        </a>
+        </AnchorLink>
       </li>
     );
   });
@@ -42,13 +37,13 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
   return (
     <header className={headerClasses}>
       <div className="Navbar-container container">
-        <a
+        <AnchorLink
           className="Navbar-logo Navbar-btn"
           href="#cover"
-          onClick={() => console.log('scroll to #cover')}
+          onClick={() => setIsExpanded(false)}
         >
           <span>:P</span>
-        </a>
+        </AnchorLink>
 
         <button
           className="Navbar-toggler Navbar-btn"
@@ -74,7 +69,6 @@ Navbar.propTypes = {
     PropTypes.shape({
       href: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
-      onClick: PropTypes.func,
     })
   ).isRequired,
   sectionRefs: PropTypes.arrayOf(
