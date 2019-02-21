@@ -35,7 +35,7 @@
   color: #eee;
   background-color: #000;
   opacity: 0.9;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in;
 }
 
 .Error-bubble-message {

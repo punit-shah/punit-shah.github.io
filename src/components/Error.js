@@ -45,7 +45,7 @@ const Error = () => {
     }
 
     const message = getErrorMessage();
-    const delay = message.includes('<marquee>') ? 5000 : 1000;
+    const delay = message.includes('<marquee>') ? 5000 : 2000;
 
     setErrorMessage(message);
     setIsBubbleHidden(false);
