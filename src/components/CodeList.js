@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CodeString from './CodeString';
 import './CodeList.css';
 
@@ -39,6 +40,11 @@ const CodeList = ({ type, data }) => {
     default:
       return null;
   }
+};
+
+CodeList.propTypes = {
+  type: PropTypes.string.isRequired,
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.object.isRequired]),
 };
 
 export default CodeList;
