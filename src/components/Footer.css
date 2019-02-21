@@ -1,0 +1,17 @@
+.Footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.Footer-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .Footer-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
