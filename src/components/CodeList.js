@@ -25,9 +25,13 @@ const CodeList = ({ type, data }) => {
       return <ul className="CodeList-object">{objectProps}</ul>;
 
     case 'array':
-      const arrayElements = data.map(element => (
-        <li className="CodeList-array-element" key={element}>
-          <CodeString>{element}</CodeString>
+      const arrayElements = data.map((element, index) => (
+        <li className="CodeList-array-element" key={index}>
+          {typeof element === 'string' ? (
+            <CodeString>{element}</CodeString>
+          ) : (
+            element
+          )}
         </li>
       ));
       return <ul className="CodeList-array">{arrayElements}</ul>;

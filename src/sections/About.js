@@ -38,7 +38,7 @@ const About = () => (
         <dd className="About-console-output">
           <CodeList
             type="array"
-            data={['Clean code', 'Design', 'Coffee', 'Movies', 'D&D']}
+            data={['Code', 'Design', 'Coffee', 'Movies', 'D&D']}
           />
         </dd>
       </dl>
