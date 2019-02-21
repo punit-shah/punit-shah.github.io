@@ -2,6 +2,7 @@
   "name": "punit-shah.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://punit-shah.github.io",
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^16.8.1",
