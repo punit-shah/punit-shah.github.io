@@ -144,6 +144,10 @@
     justify-content: flex-end;
   }
 
+  .Navbar-link > a {
+    padding-bottom: 0.875rem;
+  }
+
   .Navbar-link > a:active,
   .Navbar-link > a:focus,
   .Navbar-link > a:hover {
