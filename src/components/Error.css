@@ -18,7 +18,7 @@
 
 .Error-caption {
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   padding: 0.5rem;
 }
 
@@ -74,5 +74,11 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 400px) {
+  .Error-caption {
+    font-size: 0.875rem;
   }
 }
