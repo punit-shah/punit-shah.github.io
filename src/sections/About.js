@@ -30,7 +30,10 @@ const About = forwardRef((props, ref) => (
         <dd className="About-console-output">
           <CodeList
             type="object"
-            data={{ role: 'Software Engineering Graduate', workingAt: 'BBC' }}
+            data={{
+              role: 'Software Engineering Graduate',
+              workingAt: 'BBC',
+            }}
           />
         </dd>
 
