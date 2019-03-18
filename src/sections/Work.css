@@ -7,3 +7,17 @@
   padding-top: 3.6875rem;
   text-align: center;
 }
+
+.Work-items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1008px) {
+  .Work-items {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+}

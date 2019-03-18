@@ -70,7 +70,13 @@
   background-color: #ddd;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1008px) {
+  .WorkItem {
+    width: 48%;
+    flex: 1 1 40%;
+    margin: 0.75rem;
+  }
+
   .WorkItem-links {
     position: absolute;
     left: 0;

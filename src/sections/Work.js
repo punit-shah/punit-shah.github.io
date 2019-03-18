@@ -54,7 +54,7 @@ const Work = forwardRef((props, ref) => (
   <section className="Work" id="work" ref={ref}>
     <div className="Work-container container">
       <h2 className="Work-heading">Work + Fun</h2>
-      {workItems}
+      <div className="Work-items">{workItems}</div>
     </div>
   </section>
 ));
