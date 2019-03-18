@@ -7,8 +7,42 @@ const items = [
   {
     image: asteroids,
     title: 'Asteroids',
-    description: 'A clone of the classic arcade game ',
-    link: '',
+    description:
+      'A clone of the classic arcade game Asteroids in JavaScript 🚀👾',
+    links: {
+      visit: 'https://punit-shah.github.io/asteroids/',
+      source: 'https://github.com/punit-shah/asteroids',
+    },
+  },
+  {
+    image: asteroids,
+    title: 'Asteroids',
+    description:
+      'A clone of the classic arcade game Asteroids in JavaScript 🚀👾',
+    links: {
+      visit: 'https://punit-shah.github.io/asteroids/',
+      source: 'https://github.com/punit-shah/asteroids',
+    },
+  },
+  {
+    image: asteroids,
+    title: 'Asteroids',
+    description:
+      'A clone of the classic arcade game Asteroids in JavaScript 🚀👾',
+    links: {
+      visit: 'https://punit-shah.github.io/asteroids/',
+      source: 'https://github.com/punit-shah/asteroids',
+    },
+  },
+  {
+    image: asteroids,
+    title: 'Asteroids',
+    description:
+      'A clone of the classic arcade game Asteroids in JavaScript 🚀👾',
+    links: {
+      visit: 'https://punit-shah.github.io/asteroids/',
+      source: 'https://github.com/punit-shah/asteroids',
+    },
   },
 ];
 
