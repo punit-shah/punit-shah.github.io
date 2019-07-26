@@ -9,29 +9,29 @@ const useScrollSpy = ({
     defaultActiveSectionId
   );
 
-  const onScroll = () => {
-    let currentSectionId = activeSectionId;
-
-    sectionRefs.forEach(ref => {
-      const section = ref.current;
-
-      if (!section || !(section instanceof Element)) return;
-
-      if (section.getBoundingClientRect().top - offset < 0) {
-        currentSectionId = section.id;
-      }
-    });
-
-    setActiveSectionId(currentSectionId);
-  };
-
   useEffect(() => {
+    const onScroll = () => {
+      let currentSectionId = activeSectionId;
+
+      sectionRefs.forEach(ref => {
+        const section = ref.current;
+
+        if (!section || !(section instanceof Element)) return;
+
+        if (section.getBoundingClientRect().top - offset < 0) {
+          currentSectionId = section.id;
+        }
+      });
+
+      setActiveSectionId(currentSectionId);
+    };
+
     window.addEventListener('scroll', onScroll);
 
     return function cleanup() {
       window.removeEventListener('scroll', onScroll);
     };
-  }, [sectionRefs]);
+  }, [sectionRefs, offset, activeSectionId]);
 
   return activeSectionId;
 };
