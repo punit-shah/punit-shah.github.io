@@ -55,17 +55,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 1rem;
-  border: solid 1px #ddd;
+  padding: 0.75rem 1rem;
+  border: solid 1px #bbb;
+  line-height: 1.25;
   font-family: Inconsolata, Menlo, Consolas, monospace;
   transition: background-color 0.3s ease-in;
 }
 
+.WorkItem-link > a::before {
+  margin-right: 8px;
+}
+
 .WorkItem-link-visit > a::before {
-  content: '👀 ';
+  content: '👀';
 }
 .WorkItem-link-source > a::before {
-  content: '💻 ';
+  content: '💻';
 }
 
 .WorkItem-link > a:hover,
