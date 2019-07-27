@@ -1,27 +1,28 @@
 import React, { forwardRef } from 'react';
 import './Work.css';
 import asteroids from '../img/asteroids.png';
+import realTimeFaceAging from '../img/real-time-face-aging.png';
 import WorkItem from '../components/WorkItem';
 
 const items = [
   {
     image: asteroids,
     title: 'Asteroids',
-    description:
-      'A clone of the classic arcade game Asteroids in JavaScript 🚀👾',
+    description: `A clone of the classic arcade game Asteroids in JavaScript
+      🚀👾`,
     links: {
       visit: 'https://punit-shah.github.io/asteroids/',
       source: 'https://github.com/punit-shah/asteroids',
     },
   },
   {
-    image: asteroids,
-    title: 'Asteroids',
-    description:
-      'A clone of the classic arcade game Asteroids in JavaScript 🚀👾',
+    image: realTimeFaceAging,
+    title: 'Real-time face aging',
+    description: `Uses computer vision and graphics techniques to make your face appear older in real-time
+      👦 ➡️ 👴`,
     links: {
-      visit: 'https://punit-shah.github.io/asteroids/',
-      source: 'https://github.com/punit-shah/asteroids',
+      visit: 'https://punit-shah.github.io/real-time-face-aging/',
+      source: 'https://github.com/punit-shah/real-time-face-aging',
     },
   },
   {

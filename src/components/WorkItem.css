@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.WorkItem-description {
+  white-space: pre-line;
+}
+
 .WorkItem-title,
 .WorkItem-description {
   padding: 0 1rem;
