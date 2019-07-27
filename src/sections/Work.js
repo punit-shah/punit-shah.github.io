@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react';
 import './Work.css';
 import asteroids from '../img/asteroids.png';
 import realTimeFaceAging from '../img/real-time-face-aging.png';
+import cssSpecificityCalculator from '../img/css-specificity-calculator.png';
 import WorkItem from '../components/WorkItem';
 
 const items = [
@@ -26,13 +27,12 @@ const items = [
     },
   },
   {
-    image: asteroids,
-    title: 'Asteroids',
-    description:
-      'A clone of the classic arcade game Asteroids in JavaScript 🚀👾',
+    image: cssSpecificityCalculator,
+    title: 'CSS specificity calculator',
+    description: 'A tool to help developers understand CSS specificity',
     links: {
-      visit: 'https://punit-shah.github.io/asteroids/',
-      source: 'https://github.com/punit-shah/asteroids',
+      visit: 'https://punit-shah.github.io/specificity/',
+      source: 'https://github.com/punit-shah/specificity',
     },
   },
   {
