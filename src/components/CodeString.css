@@ -1,8 +1,0 @@
-.CodeString {
-  color: #a3be8b;
-}
-.CodeString::before,
-.CodeString::after {
-  content: '"';
-  color: #e5e9f0;
-}

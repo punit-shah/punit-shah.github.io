@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.75fa5a7a.chunk.css",
+    "main.js": "/static/js/main.17d49182.chunk.js",
+    "main.js.map": "/static/js/main.17d49182.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.c5541365.js",
+    "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
+    "static/js/2.77d18c78.chunk.js": "/static/js/2.77d18c78.chunk.js",
+    "static/js/2.77d18c78.chunk.js.map": "/static/js/2.77d18c78.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ad1c060c749583fda8240b9c9733b38f.js": "/precache-manifest.ad1c060c749583fda8240b9c9733b38f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.75fa5a7a.chunk.css.map": "/static/css/main.75fa5a7a.chunk.css.map",
+    "static/media/asteroids.png": "/static/media/asteroids.be7d6f96.png",
+    "static/media/climate-change.png": "/static/media/climate-change.ebe91587.png",
+    "static/media/css-specificity-calculator.png": "/static/media/css-specificity-calculator.cd6b38f5.png",
+    "static/media/google-labour-leadership.png": "/static/media/google-labour-leadership.6961979a.png",
+    "static/media/iplayer.png": "/static/media/iplayer.3bb23e3c.png",
+    "static/media/musical-twin-towns.png": "/static/media/musical-twin-towns.ed873a77.png",
+    "static/media/real-time-face-aging.png": "/static/media/real-time-face-aging.9c49e258.png",
+    "static/media/syria.png": "/static/media/syria.c6e7cb1e.png"
+  }
+}
