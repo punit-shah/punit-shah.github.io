@@ -103,9 +103,10 @@
   .WorkItem-link > a {
     min-width: 6.25rem;
     color: #fff;
-    border: solid 1px #fff;
+    border: solid 2px #fff;
     font-size: 1.25em;
     font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .WorkItem-link > a:hover,
@@ -114,5 +115,6 @@
     background-color: #fff;
     color: #333;
     font-weight: bold;
+    border-color: #000;
   }
 }
