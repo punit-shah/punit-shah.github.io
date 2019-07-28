@@ -59,7 +59,7 @@
   border: solid 1px #bbb;
   line-height: 1.25;
   font-family: Inconsolata, Menlo, Consolas, monospace;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
 }
 
 .WorkItem-link > a::before {
