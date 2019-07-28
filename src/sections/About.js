@@ -14,6 +14,23 @@ const About = forwardRef((props, ref) => (
           <CodeString>London</CodeString>
         </dd>
 
+        <dt className="About-console-input">Punit.skills</dt>
+        <dd className="About-console-output">
+          <CodeList
+            type="array"
+            data={[
+              'JavaScript',
+              'React',
+              'CSS',
+              'HTML',
+              'Git',
+              'Node.js',
+              'Java',
+              'Scala',
+            ]}
+          />
+        </dd>
+
         <dt className="About-console-input">Punit.education</dt>
         <dd className="About-console-output">
           <CodeList
@@ -30,7 +47,10 @@ const About = forwardRef((props, ref) => (
         <dd className="About-console-output">
           <CodeList
             type="object"
-            data={{ role: 'Software Engineering Graduate', workingAt: 'BBC' }}
+            data={{
+              role: 'Software Engineering Graduate',
+              workingAt: 'BBC',
+            }}
           />
         </dd>
 

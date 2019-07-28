@@ -39,7 +39,7 @@
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
-  transition: opacity 0.2s ease-in, transform 0.4s ease-in;
+  transition: opacity 0.2s ease-in, transform 0.3s ease-in;
   grid-area: nav;
 }
 
@@ -89,7 +89,7 @@
   border: solid 1px transparent;
   color: #fff;
   background-color: #333;
-  transition: background-color 0.4s ease-in;
+  transition: background-color 0.3s ease-in;
 }
 
 .Navbar-btn:hover,
