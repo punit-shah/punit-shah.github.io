@@ -103,7 +103,7 @@
   .WorkItem-link > a {
     min-width: 6.25rem;
     color: #fff;
-    border: solid 2px #fff;
+    border: solid 2px rgba(255, 255, 255, 0.8);
     font-size: 1.25em;
     font-weight: normal;
     background-color: rgba(0, 0, 0, 0.8);
