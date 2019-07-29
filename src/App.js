@@ -5,6 +5,7 @@ import About from './sections/About';
 import Footer from './components/Footer';
 import './App.css';
 import Work from './sections/Work';
+import Contact from './sections/Contact';
 
 const navbarLinks = [
   {
@@ -22,7 +23,7 @@ const navbarLinks = [
 ];
 
 const App = () => {
-  const sectionRefs = [useRef(null), useRef(null), useRef(null)];
+  const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
 
   return (
     <div className="App">
@@ -30,6 +31,7 @@ const App = () => {
       <Cover ref={sectionRefs[0]} />
       <About ref={sectionRefs[1]} />
       <Work ref={sectionRefs[2]} />
+      <Contact ref={sectionRefs[3]} />
       <Footer>&copy; {new Date().getFullYear()} Punit Shah</Footer>
     </div>
   );

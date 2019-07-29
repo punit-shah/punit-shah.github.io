@@ -1,0 +1,56 @@
+.Contact {
+  display: flex;
+  background-color: #dfccf1;
+}
+
+.Contact-form {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.Contact-label {
+  display: block;
+  width: 100%;
+}
+
+.Contact-field,
+.Contact-body {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0 1rem;
+  border: solid 2px #ccc;
+  font-size: 1em;
+}
+
+.Contact-body {
+  min-height: 10rem;
+  max-width: 100%;
+}
+
+.Contact-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin: 1rem auto;
+  border: solid 2px #bbb;
+  line-height: 1.25;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Inconsolata, Menlo, Consolas, monospace;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in;
+}
+
+.Contact-submit:hover,
+.Contact-submit:active,
+.Contact-submit:focus {
+  background-color: #ddd;
+}
+
+.Contact-hidden {
+  display: none;
+}
