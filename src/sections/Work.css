@@ -3,11 +3,6 @@
   background-color: #f7e1d3;
 }
 
-.Work-heading {
-  padding-top: 3.6875rem;
-  text-align: center;
-}
-
 .Work-items {
   display: flex;
   flex-direction: column;

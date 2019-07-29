@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import SectionHeading from '../components/SectionHeading';
 import CodeString from '../components/CodeString';
 import CodeList from '../components/CodeList';
 import './About.css';
@@ -6,7 +7,7 @@ import './About.css';
 const About = forwardRef((props, ref) => (
   <section className="About" id="about" ref={ref}>
     <div className="About-container container">
-      <h2 className="About-heading">About</h2>
+      <SectionHeading className="About-heading">About</SectionHeading>
 
       <dl className="About-console">
         <dt className="About-console-input">Punit.location</dt>

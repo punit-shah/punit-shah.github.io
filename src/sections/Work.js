@@ -1,4 +1,6 @@
 import React, { forwardRef } from 'react';
+import SectionHeading from '../components/SectionHeading';
+import WorkItem from '../components/WorkItem';
 import './Work.css';
 import asteroids from '../img/asteroids.png';
 import realTimeFaceAging from '../img/real-time-face-aging.png';
@@ -8,7 +10,6 @@ import climateChange from '../img/climate-change.png';
 import syria from '../img/syria.png';
 import musicalTwinTowns from '../img/musical-twin-towns.png';
 import googleLabourLeadership from '../img/google-labour-leadership.png';
-import WorkItem from '../components/WorkItem';
 
 const items = [
   {
@@ -97,7 +98,7 @@ const workItems = items.map((item, index) => (
 const Work = forwardRef((props, ref) => (
   <section className="Work" id="work" ref={ref}>
     <div className="Work-container container">
-      <h2 className="Work-heading">Work + Fun</h2>
+      <SectionHeading className="Work-heading">Work + Fun</SectionHeading>
       <div className="Work-items">{workItems}</div>
     </div>
   </section>
