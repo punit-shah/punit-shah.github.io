@@ -13,7 +13,7 @@
 }
 
 .Cover-heading {
-  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   font-weight: normal;
   font-size: 2rem;
   text-transform: lowercase;

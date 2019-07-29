@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import SectionHeading from '../components/SectionHeading';
+import Button from '../components/Button';
 import './Contact.css';
 
 const Contact = forwardRef((props, ref) => (
@@ -47,7 +48,7 @@ const Contact = forwardRef((props, ref) => (
         </label>
         <input className="Contact-hidden" type="text" name="_gotcha" />
         <input type="hidden" name="_subject" value="Contact form message" />
-        <input
+        <Button
           className="Contact-submit"
           id="Contact-send"
           type="submit"

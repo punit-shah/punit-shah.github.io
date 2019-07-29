@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from './Button';
 import './WorkItem.css';
 
 const WorkItem = ({
@@ -23,12 +24,12 @@ const WorkItem = ({
         <ul className="WorkItem-links">
           {visit && (
             <li className="WorkItem-link WorkItem-link-visit">
-              <a href={visit}>Visit</a>
+              <Button href={visit}>Visit</Button>
             </li>
           )}
           {source && (
             <li className="WorkItem-link WorkItem-link-source">
-              <a href={source}>Source</a>
+              <Button href={source}>Source</Button>
             </li>
           )}
         </ul>
