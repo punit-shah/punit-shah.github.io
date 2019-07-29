@@ -10,12 +10,12 @@
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   cursor: pointer;
   background-color: #fff;
-  transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in, border-color 0.1s ease-in;
 }
 
 .Button:hover,
 .Button:active,
 .Button:focus {
   background-color: #ddd;
-  border-color: #9ab7d3;
+  border-color: #999;
 }
