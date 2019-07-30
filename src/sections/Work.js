@@ -16,7 +16,7 @@ const items = [
     image: asteroids,
     title: 'Asteroids',
     description:
-      'A modern clone of the classic arcade game Asteroids in JavaScript.',
+      'A modern clone of the classic arcade game Asteroids, implemented with JavaScript.',
     links: {
       visit: 'https://punit-shah.github.io/asteroids/',
       source: 'https://github.com/punit-shah/asteroids',
