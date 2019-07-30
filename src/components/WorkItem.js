@@ -17,23 +17,23 @@ const WorkItem = ({
     <article className="WorkItem">
       <div className="WorkItem-image">
         <img src={image} alt={`Screenshot of ${title}`} />
+        {hasLinks && (
+          <ul className="WorkItem-links">
+            {visit && (
+              <li className="WorkItem-link WorkItem-link-visit">
+                <Button href={visit}>Visit</Button>
+              </li>
+            )}
+            {source && (
+              <li className="WorkItem-link WorkItem-link-source">
+                <Button href={source}>Source</Button>
+              </li>
+            )}
+          </ul>
+        )}
       </div>
       <h3 className="WorkItem-title">{title}</h3>
       <p className="WorkItem-description">{description}</p>
-      {hasLinks && (
-        <ul className="WorkItem-links">
-          {visit && (
-            <li className="WorkItem-link WorkItem-link-visit">
-              <Button href={visit}>Visit</Button>
-            </li>
-          )}
-          {source && (
-            <li className="WorkItem-link WorkItem-link-source">
-              <Button href={source}>Source</Button>
-            </li>
-          )}
-        </ul>
-      )}
     </article>
   );
 };
