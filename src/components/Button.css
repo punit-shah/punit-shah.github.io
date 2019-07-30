@@ -19,3 +19,11 @@
   background-color: #ddd;
   border-color: #999;
 }
+
+.Button:disabled {
+  cursor: default;
+  color: #555;
+  background-color: #fff;
+  border-color: #bbb;
+  opacity: 0.8;
+}
