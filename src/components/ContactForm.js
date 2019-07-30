@@ -48,12 +48,12 @@ const ContactForm = () => {
       setEmail('');
       setMessage('');
 
-      setTimeout(() => setFormState('idle'), 5000);
+      setTimeout(() => setFormState('idle'), 3000);
     } catch (error) {
       console.error(error);
       setFormState('failure');
 
-      setTimeout(() => setFormState('idle'), 5000);
+      setTimeout(() => setFormState('idle'), 3000);
     }
   };
 
