@@ -40,13 +40,17 @@
 }
 
 .ContactForm-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: #fff;
-  border-radius: 6px;
+  width: 100%;
+  margin: 0;
   padding: 1rem;
   text-align: center;
   opacity: 1;
   transform: scaleY(1);
-  transform-origin: top;
+  transform-origin: bottom;
   transition: opacity 0.2s ease-in, transform 0.2s ease-in,
     background-color 0.2s ease-in;
 }
@@ -57,7 +61,7 @@
 }
 
 .ContactForm-message-success {
-  background-color: #a3be8b;
+  background-color: #d0efb5;
 }
 
 .ContactForm-message-failure {
