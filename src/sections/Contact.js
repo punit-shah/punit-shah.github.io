@@ -1,15 +1,12 @@
 import React, { forwardRef } from 'react';
-import SectionHeading from '../components/SectionHeading';
+import Section from '../components/Section';
 import ContactForm from '../components/ContactForm';
 import './Contact.css';
 
 const Contact = forwardRef((props, ref) => (
-  <section className="Contact" id="contact" ref={ref}>
-    <div className="Contact-container container">
-      <SectionHeading className="Contact-title">Contact</SectionHeading>
-      <ContactForm />
-    </div>
-  </section>
+  <Section className="Contact" id="contact" heading="Contact" centred ref={ref}>
+    <ContactForm />
+  </Section>
 ));
 
 export default Contact;

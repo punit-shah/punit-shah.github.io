@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import SectionHeading from '../components/SectionHeading';
+import Section from '../components/Section';
 import WorkItem from '../components/WorkItem';
 import './Work.css';
 import asteroids from '../img/asteroids.png';
@@ -96,12 +96,9 @@ const workItems = items.map((item, index) => (
 ));
 
 const Work = forwardRef((props, ref) => (
-  <section className="Work" id="work" ref={ref}>
-    <div className="Work-container container">
-      <SectionHeading className="Work-heading">Work + Fun</SectionHeading>
-      <div className="Work-items">{workItems}</div>
-    </div>
-  </section>
+  <Section className="Work" id="work" heading="Work + Fun" ref={ref}>
+    <div className="Work-items">{workItems}</div>
+  </Section>
 ));
 
 export default Work;
