@@ -72,7 +72,6 @@
   font-weight: normal;
 }
 
-.Navbar-link > a:active,
 .Navbar-link > a:focus,
 .Navbar-link > a:hover {
   background-color: #eee;
@@ -167,7 +166,6 @@
     padding-bottom: 0.875rem;
   }
 
-  .Navbar-link > a:active,
   .Navbar-link > a:focus,
   .Navbar-link > a:hover {
     background-color: unset;
