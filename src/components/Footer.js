@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => (
-  <footer className="Footer">
-    &copy; {new Date().getFullYear()} Punit Shah
-  </footer>
-);
+const Footer = () => {
+  const year = new Date().getFullYear();
+
+  return <footer className="Footer">{`\u00A9 ${year} Punit Shah`}</footer>;
+};
 
 export default Footer;
