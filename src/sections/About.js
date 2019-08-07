@@ -24,6 +24,7 @@ const About = forwardRef((props, ref) => (
               'React',
               'CSS',
               'HTML',
+              'AWS',
               'Git',
               'Node.js',
               'Java',
