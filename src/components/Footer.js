@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = ({ children }) => (
+const Footer = () => (
   <footer className="Footer">
-    <div className="Footer-container container">{children}</div>
+    &copy; {new Date().getFullYear()} Punit Shah
   </footer>
 );
 

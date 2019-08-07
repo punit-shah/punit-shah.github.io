@@ -29,35 +29,8 @@ a {
   border-bottom: 1px solid #ddd;
 }
 
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-@media (min-width: 400px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
 @media (min-width: 600px) {
   body {
     font-size: 1.125rem;
-  }
-
-  .container {
-    padding-left: 8.1%;
-    padding-right: 8.1%;
-  }
-}
-
-@media (min-width: 800px) {
-  .container {
-    padding-left: 16.4%;
-    padding-right: 16.4%;
   }
 }

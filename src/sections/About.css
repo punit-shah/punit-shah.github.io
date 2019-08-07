@@ -1,13 +1,5 @@
 .About {
-  display: flex;
   background-color: #f5d2d3;
-}
-
-.About-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .About-console {
@@ -25,6 +17,7 @@
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+
 .About-console::before {
   content: '';
   position: absolute;
@@ -49,6 +42,7 @@
   position: relative;
   margin-left: 1rem;
 }
+
 .About-console-input::before {
   content: '›';
   color: #a3be8b;
@@ -59,6 +53,7 @@
 .About-console-output {
   margin-bottom: 1em;
 }
+
 .About-console-output:last-of-type {
   margin-bottom: 0;
 }

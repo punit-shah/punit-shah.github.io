@@ -2,10 +2,10 @@ import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import Cover from './sections/Cover';
 import About from './sections/About';
-import Footer from './components/Footer';
-import './App.css';
 import Work from './sections/Work';
 import Contact from './sections/Contact';
+import Footer from './components/Footer';
+import './App.css';
 
 const navbarLinks = [
   {
@@ -32,7 +32,7 @@ const App = () => {
       <About ref={sectionRefs[1]} />
       <Work ref={sectionRefs[2]} />
       <Contact ref={sectionRefs[3]} />
-      <Footer>&copy; {new Date().getFullYear()} Punit Shah</Footer>
+      <Footer />
     </div>
   );
 };

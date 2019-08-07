@@ -1,5 +1,4 @@
 .Work {
-  display: flex;
   background-color: #f7e1d3;
 }
 
@@ -13,6 +12,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem 0;
+    margin: 1rem 0;
   }
 }

@@ -36,7 +36,7 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
 
   return (
     <header className={headerClasses}>
-      <div className="Navbar-container container">
+      <div className="Navbar-container">
         <AnchorLink
           className="Navbar-logo Navbar-btn"
           href="#cover"
