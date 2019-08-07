@@ -75,6 +75,14 @@
     padding-bottom: 1rem;
   }
 
+  .WorkItem:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .WorkItem:nth-child(even) {
+    margin-right: 0;
+  }
+
   .WorkItem-image {
     position: relative;
   }
