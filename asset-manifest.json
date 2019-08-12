@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d20f5f1.chunk.css",
+    "main.css": "/static/css/main.3884b2f9.chunk.css",
     "main.js": "/static/js/main.f6fcf528.chunk.js",
     "main.js.map": "/static/js/main.f6fcf528.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.c5541365.js",
@@ -8,9 +8,9 @@
     "static/js/2.01fb6116.chunk.js": "/static/js/2.01fb6116.chunk.js",
     "static/js/2.01fb6116.chunk.js.map": "/static/js/2.01fb6116.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.96e9ed5a37ceef883540fa39631e71ce.js": "/precache-manifest.96e9ed5a37ceef883540fa39631e71ce.js",
+    "precache-manifest.619ec286ecc16f686c38e0059cd65c58.js": "/precache-manifest.619ec286ecc16f686c38e0059cd65c58.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2d20f5f1.chunk.css.map": "/static/css/main.2d20f5f1.chunk.css.map",
+    "static/css/main.3884b2f9.chunk.css.map": "/static/css/main.3884b2f9.chunk.css.map",
     "static/media/asteroids.png": "/static/media/asteroids.be7d6f96.png",
     "static/media/climate-change.png": "/static/media/climate-change.ebe91587.png",
     "static/media/css-specificity-calculator.png": "/static/media/css-specificity-calculator.cd6b38f5.png",
