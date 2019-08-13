@@ -1,0 +1,58 @@
+.Terminal {
+  position: relative;
+  margin: 1.25rem 0 3.6875rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 690px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 0.875rem;
+  color: #d8dee8;
+  background-color: #2e3340;
+  border: 1px solid transparent;
+  border-top: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.Terminal::before {
+  content: '';
+  position: absolute;
+  top: -1.25rem;
+  left: -1px;
+  display: block;
+  width: calc(100% + 2px);
+  height: 1.25rem;
+  background-image: linear-gradient(to top, #d6d6d6 0%, #ebebeb 1.5rem);
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.Terminal-input,
+.Terminal-output {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.Terminal-input::before {
+  content: '›';
+  color: #a3be8b;
+  position: absolute;
+  left: -1rem;
+}
+
+.Terminal-output {
+  margin-bottom: 1em;
+}
+
+.Terminal-output:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .Terminal {
+    font-size: 1rem;
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);
+  }
+}

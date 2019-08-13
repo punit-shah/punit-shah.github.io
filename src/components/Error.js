@@ -6,13 +6,11 @@ import errorImg from '../img/error.png';
 const getErrorMessage = () => {
   const messages = [
     'this site needs an "under construction" gif',
-    'please do not touch me',
-    "back in my day we didn't click on errors for no reason",
     'a long time ago, clicking on me would have crashed your browser',
     'i am not an a.i.',
     'why was i built with react',
     '<marquee>i miss this</marquee>',
-    'you need more ram',
+    'punit is such a nerd',
   ];
   const randomMessageIndex = Math.floor(Math.random() * messages.length);
 
