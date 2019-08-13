@@ -4,6 +4,10 @@
   "private": true,
   "homepage": "https://punitshah.dev",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-brands-svg-icons": "^5.10.1",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react": "16.8.6",

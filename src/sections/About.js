@@ -1,4 +1,7 @@
 import React, { forwardRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Section from '../components/Section';
 import Terminal from '../components/Terminal';
 import './About.css';
@@ -47,6 +50,21 @@ const About = forwardRef((props, ref) => (
         },
       ]}
     />
+    <p>Find out more:</p>
+    <ul className="About-links">
+      <li>
+        <a className="About-link" href={`${process.env.PUBLIC_URL}/cv.pdf`}>
+          <FontAwesomeIcon className="About-link-icon" icon={faFileAlt} />
+          <span>CV</span>
+        </a>
+      </li>
+      <li>
+        <a className="About-link" href="https://github.com/punit-shah">
+          <FontAwesomeIcon className="About-link-icon" icon={faGithub} />
+          <span>GitHub</span>
+        </a>
+      </li>
+    </ul>
   </Section>
 ));
 
