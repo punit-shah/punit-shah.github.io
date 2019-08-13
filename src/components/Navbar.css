@@ -73,7 +73,6 @@
 }
 
 .Navbar-link > a:active,
-.Navbar-link > a:focus,
 .Navbar-link > a:hover {
   background-color: #eee;
 }
@@ -168,7 +167,6 @@
   }
 
   .Navbar-link > a:active,
-  .Navbar-link > a:focus,
   .Navbar-link > a:hover {
     background-color: unset;
     border-bottom: solid 2px #333;
