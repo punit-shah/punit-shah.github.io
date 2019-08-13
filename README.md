@@ -1,6 +1,6 @@
-# punit-shah.github.io
+# punitshah.dev
 
-![Screenshot of punit-shah.github.io](https://user-images.githubusercontent.com/6018387/62081999-bc1fc200-b24b-11e9-9bcd-fe4e4a1fc5ca.png)
+![Screenshot of punitshah.dev](https://user-images.githubusercontent.com/6018387/62934080-a36eea80-bdbb-11e9-82ca-933dbe3587d1.png)
 
 ## Development
 
