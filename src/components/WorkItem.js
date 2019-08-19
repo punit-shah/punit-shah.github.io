@@ -1,25 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import Button from './Button';
 import './WorkItem.css';
 
 const WorkItemLink = ({ type, href }) => {
   const labels = {
     visit: {
-      emoji: '👀',
+      icon: (
+        <span className="WorkItemLink-emoji" role="img" aria-label="eyes">
+          👀
+        </span>
+      ),
       text: 'Visit',
     },
     source: {
-      emoji: '💻',
+      icon: <FontAwesomeIcon className="WorkItemLink-icon" icon={faCode} />,
       text: 'Source',
     },
   };
 
   return (
     <Button href={href} className="WorkItemLink">
-      <span className="WorkItemLink-emoji" role="img">
-        {labels[type].emoji}
-      </span>
+      {labels[type].icon}
       {labels[type].text}
     </Button>
   );
