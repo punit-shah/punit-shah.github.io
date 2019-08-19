@@ -8,6 +8,7 @@
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   text-align: center;
   cursor: pointer;
+  color: #404040;
   background-color: #fff;
   transition: background-color 0.2s ease-in, border-color 0.1s ease-in;
 }
@@ -15,6 +16,7 @@
 .Button:hover,
 .Button:active,
 .Button:focus {
+  color: #000;
   background-color: #ddd;
   border-color: #999;
 }

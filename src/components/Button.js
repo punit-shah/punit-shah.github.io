@@ -3,12 +3,12 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import './Button.css';
 
-const Button = ({ type, href, className, children, ...otherProps }) => {
+const Button = ({ type, href, value, className, children, ...otherProps }) => {
   const classes = classNames('Button', className);
 
-  if (type && (type === 'submit' || type === 'button')) {
+  if (value && type && (type === 'submit' || type === 'button')) {
     return (
-      <input className={classes} type={type} {...otherProps}>
+      <input className={classes} type={type} value={value} {...otherProps}>
         {children}
       </input>
     );
@@ -23,7 +23,7 @@ const Button = ({ type, href, className, children, ...otherProps }) => {
   }
 
   return (
-    <button className={classes} {...otherProps}>
+    <button className={classes} type={type} {...otherProps}>
       {children}
     </button>
   );

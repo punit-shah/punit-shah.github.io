@@ -39,6 +39,14 @@
   margin: 2rem auto 1rem;
 }
 
+.ContactForm-submit-emoji {
+  font-family: 'Apple Color Emoji', 'Segoe UI', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 .ContactForm-message {
   position: fixed;
   bottom: 0;

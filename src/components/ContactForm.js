@@ -99,9 +99,17 @@ const ContactForm = () => {
       <Button
         className="ContactForm-submit"
         type="submit"
-        value="🚀 Send message"
         disabled={formState === 'sending'}
-      />
+      >
+        <span
+          className="ContactForm-submit-emoji"
+          role="img"
+          aria-label="rocket"
+        >
+          🚀
+        </span>
+        Send message
+      </Button>
       {messages[formState] && (
         <p className={`ContactForm-message ContactForm-message-${formState}`}>
           {messages[formState]}
