@@ -3,6 +3,28 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 import './WorkItem.css';
 
+const WorkItemLink = ({ type, href }) => {
+  const labels = {
+    visit: {
+      emoji: '👀',
+      text: 'Visit',
+    },
+    source: {
+      emoji: '💻',
+      text: 'Source',
+    },
+  };
+
+  return (
+    <Button href={href} className="WorkItemLink">
+      <span className="WorkItemLink-emoji" role="img">
+        {labels[type].emoji}
+      </span>
+      {labels[type].text}
+    </Button>
+  );
+};
+
 const WorkItem = ({
   data: {
     image,
@@ -20,13 +42,13 @@ const WorkItem = ({
         {hasLinks && (
           <ul className="WorkItem-links">
             {visit && (
-              <li className="WorkItem-link WorkItem-link-visit">
-                <Button href={visit}>Visit</Button>
+              <li className="WorkItem-links-item">
+                <WorkItemLink type="visit" href={visit} />
               </li>
             )}
             {source && (
-              <li className="WorkItem-link WorkItem-link-source">
-                <Button href={source}>Source</Button>
+              <li className="WorkItem-links-item">
+                <WorkItemLink type="source" href={source} />
               </li>
             )}
           </ul>
