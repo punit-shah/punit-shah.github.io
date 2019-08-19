@@ -3,7 +3,7 @@ import Button from './Button';
 import './ContactForm.css';
 
 const formApiUrl =
-  'https://xlframabl3.execute-api.eu-west-1.amazonaws.com/prod/email/send';
+  'https://xlframabl3.execute-api.eu-west-1.amazonaws.com/prod/send-email';
 
 const postData = async (url, data = {}) => {
   const response = await fetch(url, {
