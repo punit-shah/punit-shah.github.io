@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import throttle from 'lodash.throttle';
 
 const useScrollSpy = ({
   sectionRefs = [],
@@ -25,11 +26,12 @@ const useScrollSpy = ({
 
       setActiveSectionId(currentSectionId);
     };
+    const onScrollThrottled = throttle(onScroll, 100);
 
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScrollThrottled);
 
     return function cleanup() {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scroll', onScrollThrottled);
     };
   }, [sectionRefs, offset, activeSectionId]);
 
