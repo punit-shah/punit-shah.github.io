@@ -12,11 +12,6 @@
 }
 
 .Navbar-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -125,11 +120,6 @@
 }
 
 @media (min-width: 400px) {
-  .Navbar-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .Navbar-nav {
     margin-left: -1rem;
     margin-right: -1rem;
@@ -142,16 +132,11 @@
 
 @media (min-width: 600px) {
   .Navbar-container {
-    padding-left: 8.1%;
-    padding-right: 8.1%;
+    grid-template-areas: 'logo nav';
   }
 
   .Navbar-toggler {
     display: none;
-  }
-
-  .Navbar-container {
-    grid-template-areas: 'logo nav';
   }
 
   .Navbar-nav {
@@ -177,12 +162,5 @@
 
   .Navbar-link-active > a {
     border-bottom: solid 2px #333;
-  }
-}
-
-@media (min-width: 800px) {
-  .Navbar-container {
-    padding-left: 16.4%;
-    padding-right: 16.4%;
   }
 }

@@ -1,21 +1,17 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import Container from './Container';
 import SectionHeading from './SectionHeading';
 import './Section.css';
 
 const Section = forwardRef(
   ({ className, id, heading, centred, children }, ref) => (
     <section className={classNames('Section', className)} id={id} ref={ref}>
-      <div
-        className={classNames([
-          'Section-container',
-          { 'Section-container-centred': centred },
-        ])}
-      >
+      <Container centered={centred}>
         {heading && <SectionHeading>{heading}</SectionHeading>}
         {children}
-      </div>
+      </Container>
     </section>
   )
 );

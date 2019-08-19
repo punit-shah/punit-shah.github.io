@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Container from './Container';
 import useScrollSpy from '../hooks/useScrollSpy';
 import './Navbar.css';
 
@@ -36,7 +37,7 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
 
   return (
     <header className={headerClasses}>
-      <div className="Navbar-container">
+      <Container className="Navbar-container">
         <AnchorLink
           className="Navbar-logo Navbar-btn"
           href="#cover"
@@ -58,7 +59,7 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
         <nav className={navClasses} id="nav" aria-hidden={!isExpanded}>
           <ul className="Navbar-list">{listItems}</ul>
         </nav>
-      </div>
+      </Container>
     </header>
   );
 };

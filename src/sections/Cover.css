@@ -4,14 +4,6 @@
   display: flex;
 }
 
-.Cover-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
 .Cover-heading {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   font-weight: normal;
