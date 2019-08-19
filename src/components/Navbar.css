@@ -24,6 +24,7 @@
   grid-template-areas:
     'logo toggler'
     'nav nav';
+  pointer-events: none;
 }
 
 .Navbar-logo {
@@ -46,6 +47,7 @@
   transform-origin: top;
   transition: opacity 0.2s ease-in, transform 0.3s ease-in;
   grid-area: nav;
+  pointer-events: auto;
 }
 
 .Navbar-nav-expanded {
@@ -94,6 +96,7 @@
   color: #fff;
   background-color: #333;
   transition: background-color 0.3s ease-in;
+  pointer-events: auto;
 }
 
 .Navbar-btn:hover,
