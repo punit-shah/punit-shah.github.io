@@ -56,6 +56,7 @@
     'Segoe UI Symbol';
   font-size: 1.2em;
   vertical-align: middle;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .WorkItemLink-emoji,
