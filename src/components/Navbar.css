@@ -1,25 +1,20 @@
 .Navbar {
+  position: relative;
   height: 3.6875rem;
   background-color: #fff;
 }
 
 .Navbar-fixed {
   position: fixed;
+  top: 0;
   right: 0;
   left: 0;
-  top: 0;
   z-index: 2;
 }
 
-.Navbar-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'logo toggler'
-    'nav nav';
-  pointer-events: none;
+.Navbar-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .Navbar-logo {
@@ -28,21 +23,21 @@
   font-family: Inconsolata, Menlo, Consolas, monospace;
   font-weight: bold;
   text-align: center;
-  grid-area: logo;
   justify-self: start;
 }
 
 .Navbar-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
   background-color: #fff;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
   transition: opacity 0.2s ease-in, transform 0.3s ease-in;
-  grid-area: nav;
-  pointer-events: auto;
 }
 
 .Navbar-nav-expanded {
@@ -86,12 +81,11 @@
   font-size: 1.25rem;
   width: 2.25rem;
   height: 2.25rem;
-  margin: 0.5625rem 0;
+  margin: 0.718rem 0;
   border: solid 1px transparent;
   color: #fff;
   background-color: #333;
   transition: background-color 0.3s ease-in;
-  pointer-events: auto;
 }
 
 .Navbar-btn:hover,
@@ -100,6 +94,7 @@
   background-color: #fff;
   color: #333;
   border: solid 2px #333;
+  outline: 0;
 }
 
 .Navbar-toggler {
@@ -108,23 +103,10 @@
   font-family: inherit;
   border: none;
   cursor: pointer;
-  margin: 0.5625rem 0;
-  grid-area: toggler;
   justify-self: end;
 }
 
-.Navbar-toggler:active,
-.Navbar-toggler:focus,
-.Navbar-toggler:hover {
-  outline: 0;
-}
-
 @media (min-width: 400px) {
-  .Navbar-nav {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-
   .Navbar-link > a {
     padding: 1rem;
   }
@@ -132,7 +114,8 @@
 
 @media (min-width: 600px) {
   .Navbar-container {
-    grid-template-areas: 'logo nav';
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .Navbar-toggler {
@@ -140,6 +123,8 @@
   }
 
   .Navbar-nav {
+    position: static;
+    width: auto;
     opacity: 1;
     transform: none;
     box-shadow: none;

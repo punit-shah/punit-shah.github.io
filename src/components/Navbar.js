@@ -38,23 +38,25 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
   return (
     <header className={headerClasses}>
       <Container className="Navbar-container">
-        <AnchorLink
-          className="Navbar-logo Navbar-btn"
-          href="#cover"
-          onClick={() => setIsExpanded(false)}
-        >
-          <span>:P</span>
-        </AnchorLink>
+        <div className="Navbar-buttons">
+          <AnchorLink
+            className="Navbar-logo Navbar-btn"
+            href="#cover"
+            onClick={() => setIsExpanded(false)}
+          >
+            <span>:P</span>
+          </AnchorLink>
 
-        <button
-          className="Navbar-toggler Navbar-btn"
-          onClick={() => setIsExpanded(prevIsExpanded => !prevIsExpanded)}
-          aria-expanded={isExpanded}
-          aria-controls="nav"
-          aria-label="Toggle navigation."
-        >
-          <span>☰</span>
-        </button>
+          <button
+            className="Navbar-toggler Navbar-btn"
+            onClick={() => setIsExpanded(prevIsExpanded => !prevIsExpanded)}
+            aria-expanded={isExpanded}
+            aria-controls="nav"
+            aria-label="Toggle navigation."
+          >
+            <span>☰</span>
+          </button>
+        </div>
 
         <nav className={navClasses} id="nav" aria-hidden={!isExpanded}>
           <ul className="Navbar-list">{listItems}</ul>
