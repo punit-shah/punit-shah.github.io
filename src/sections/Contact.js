@@ -5,7 +5,11 @@ import './Contact.css';
 
 const Contact = forwardRef((props, ref) => (
   <Section className="Contact" id="contact" heading="Contact" centred ref={ref}>
-    <ContactForm />
+    <ContactForm
+      formApiUrl={process.env.REACT_APP_FORM_API_URL}
+      text="Got a question? I'd love to hear from you. Send me a message and I'll
+        respond as soon as possible."
+    />
   </Section>
 ));
 

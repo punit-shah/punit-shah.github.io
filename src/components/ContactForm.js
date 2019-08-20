@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 import './ContactForm.css';
-
-const formApiUrl =
-  'https://xlframabl3.execute-api.eu-west-1.amazonaws.com/prod/send-email';
 
 const postData = async (url, data = {}) => {
   const response = await fetch(url, {
@@ -18,7 +16,7 @@ const postData = async (url, data = {}) => {
   return response.json();
 };
 
-const ContactForm = () => {
+const ContactForm = ({ formApiUrl, text }) => {
   const [formState, setFormState] = useState('idle');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -59,10 +57,7 @@ const ContactForm = () => {
 
   return (
     <form className="ContactForm" onSubmit={onSubmit}>
-      <p>
-        Got a question? I'd love to hear from you. Send me a message and I'll
-        respond as soon as possible.
-      </p>
+      {text && <p>{text}</p>}
       <label className="ContactForm-label">
         Name
         <input
@@ -117,6 +112,11 @@ const ContactForm = () => {
       )}
     </form>
   );
+};
+
+ContactForm.propTypes = {
+  formApiUrl: PropTypes.string.isRequired,
+  text: PropTypes.string,
 };
 
 export default ContactForm;

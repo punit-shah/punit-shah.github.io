@@ -1,7 +1,8 @@
 .ContactForm {
+  width: 100%;
   max-width: 690px;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 .ContactForm-label {
