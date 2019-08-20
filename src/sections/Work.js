@@ -46,7 +46,7 @@ const items = [
     title: 'CSS specificity calculator',
     description: 'A tool to help developers understand CSS specificity.',
     links: {
-      visit: 'https://punit-shah.github.io/specificity/',
+      visit: 'https://specificity.surge.sh',
       source: 'https://github.com/punit-shah/specificity',
     },
   },
