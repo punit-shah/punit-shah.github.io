@@ -21,6 +21,10 @@ const OutputComponent = ({ output }) => {
     return <CodeString>{output}</CodeString>;
   }
 
+  if (typeof output === 'boolean') {
+    return <span style={{ color: '#bf616a' }}>{output.toString()}</span>;
+  }
+
   return null;
 };
 
