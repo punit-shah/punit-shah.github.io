@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -8,6 +8,23 @@ import './Navbar.css';
 
 const Navbar = ({ fixed, links, sectionRefs }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+
+  // hasTogglableMenu is true only when the screen is small
+  const mediaQuery = window.matchMedia('(min-width: 600px)');
+  const [hasTogglableMenu, setHasTogglableMenu] = useState(!mediaQuery.matches);
+  useEffect(() => {
+    const mediaQueryHandler = ({ matches }) => {
+      if (matches) {
+        setHasTogglableMenu(false);
+      } else {
+        setHasTogglableMenu(true);
+      }
+    };
+    mediaQuery.addListener(mediaQueryHandler);
+    return () => {
+      mediaQuery.removeListener(mediaQueryHandler);
+    };
+  }, [mediaQuery]);
 
   const activeSectionId = useScrollSpy({
     sectionRefs,
@@ -31,7 +48,7 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
         <AnchorLink
           href={href}
           onClick={() => setIsExpanded(false)}
-          tabIndex={isExpanded ? 0 : -1}
+          tabIndex={hasTogglableMenu ? (isExpanded ? 0 : -1) : 0}
         >
           {text}
         </AnchorLink>
@@ -51,15 +68,17 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
             <span>:P</span>
           </AnchorLink>
 
-          <button
-            className="Navbar-toggler Navbar-btn"
-            onClick={() => setIsExpanded(prevIsExpanded => !prevIsExpanded)}
-            aria-expanded={isExpanded}
-            aria-controls="nav"
-            aria-label="Toggle navigation."
-          >
-            <span>☰</span>
-          </button>
+          {hasTogglableMenu && (
+            <button
+              className="Navbar-toggler Navbar-btn"
+              onClick={() => setIsExpanded(prevIsExpanded => !prevIsExpanded)}
+              aria-expanded={isExpanded}
+              aria-controls="nav"
+              aria-label="Toggle navigation."
+            >
+              <span>☰</span>
+            </button>
+          )}
         </div>
 
         <nav className={navClasses} id="nav" aria-hidden={!isExpanded}>

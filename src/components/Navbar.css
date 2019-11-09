@@ -118,10 +118,6 @@
     justify-content: space-between;
   }
 
-  .Navbar-toggler {
-    display: none;
-  }
-
   .Navbar-nav {
     position: static;
     width: auto;
@@ -129,6 +125,7 @@
     transform: none;
     box-shadow: none;
     overflow-y: hidden;
+    transition: none;
   }
 
   .Navbar-list {
