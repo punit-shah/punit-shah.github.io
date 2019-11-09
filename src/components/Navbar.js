@@ -28,7 +28,11 @@ const Navbar = ({ fixed, links, sectionRefs }) => {
 
     return (
       <li className={linkClasses} key={index}>
-        <AnchorLink href={href} onClick={() => setIsExpanded(false)}>
+        <AnchorLink
+          href={href}
+          onClick={() => setIsExpanded(false)}
+          tabIndex={isExpanded ? 0 : -1}
+        >
           {text}
         </AnchorLink>
       </li>
