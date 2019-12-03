@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ced05f9c.chunk.css",
-    "main.js": "/static/js/main.cc2e14bf.chunk.js",
-    "main.js.map": "/static/js/main.cc2e14bf.chunk.js.map",
+    "main.css": "/static/css/main.c3a27a85.chunk.css",
+    "main.js": "/static/js/main.a77616a6.chunk.js",
+    "main.js.map": "/static/js/main.a77616a6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9bcc1d0a.js",
     "runtime-main.js.map": "/static/js/runtime-main.9bcc1d0a.js.map",
     "static/js/2.b94c8d59.chunk.js": "/static/js/2.b94c8d59.chunk.js",
     "static/js/2.b94c8d59.chunk.js.map": "/static/js/2.b94c8d59.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.25a4f3ab11cad798d80ee1035b8743dc.js": "/precache-manifest.25a4f3ab11cad798d80ee1035b8743dc.js",
+    "precache-manifest.a70a075c67efb96e8014c0aee603cafd.js": "/precache-manifest.a70a075c67efb96e8014c0aee603cafd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.ced05f9c.chunk.css.map": "/static/css/main.ced05f9c.chunk.css.map",
+    "static/css/main.c3a27a85.chunk.css.map": "/static/css/main.c3a27a85.chunk.css.map",
     "static/media/asteroids.png": "/static/media/asteroids.be7d6f96.png",
     "static/media/climate-change.png": "/static/media/climate-change.ebe91587.png",
     "static/media/css-specificity-calculator.png": "/static/media/css-specificity-calculator.cd6b38f5.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.9bcc1d0a.js",
     "static/js/2.b94c8d59.chunk.js",
-    "static/css/main.ced05f9c.chunk.css",
-    "static/js/main.cc2e14bf.chunk.js"
+    "static/css/main.c3a27a85.chunk.css",
+    "static/js/main.a77616a6.chunk.js"
   ]
 }
