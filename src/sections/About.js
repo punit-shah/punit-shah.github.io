@@ -38,8 +38,11 @@ const About = forwardRef((props, ref) => (
           },
         },
         {
-          input: 'Punit.lookingForNewJobOpportunities',
-          output: true,
+          input: 'Punit.currentRole',
+          output: {
+            role: 'Front End Engineer',
+            workingAt: 'Checkout.com',
+          },
         },
         {
           input: 'Punit.interests',
