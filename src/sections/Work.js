@@ -18,7 +18,7 @@ const items = [
     description:
       'A modern clone of the classic arcade game Asteroids, implemented with JavaScript.',
     links: {
-      visit: 'https://punit-shah.github.io/asteroids/',
+      visit: 'https://asteroidsjs.surge.sh',
       source: 'https://github.com/punit-shah/asteroids',
     },
   },
@@ -28,7 +28,7 @@ const items = [
     description:
       'Uses computer vision and graphics techniques to make your face appear older in real-time.',
     links: {
-      visit: 'https://punit-shah.github.io/real-time-face-aging/',
+      visit: 'https://real-time-face-aging.surge.sh',
       source: 'https://github.com/punit-shah/real-time-face-aging',
     },
   },
