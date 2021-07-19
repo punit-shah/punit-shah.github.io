@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3a27a85.chunk.css",
-    "main.js": "/static/js/main.a77616a6.chunk.js",
-    "main.js.map": "/static/js/main.a77616a6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9bcc1d0a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9bcc1d0a.js.map",
-    "static/js/2.b94c8d59.chunk.js": "/static/js/2.b94c8d59.chunk.js",
-    "static/js/2.b94c8d59.chunk.js.map": "/static/js/2.b94c8d59.chunk.js.map",
+    "main.css": "/static/css/main.2935d339.chunk.css",
+    "main.js": "/static/js/main.5a46a96e.chunk.js",
+    "main.js.map": "/static/js/main.5a46a96e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d5a918a5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d5a918a5.js.map",
+    "static/js/2.000df468.chunk.js": "/static/js/2.000df468.chunk.js",
+    "static/js/2.000df468.chunk.js.map": "/static/js/2.000df468.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a70a075c67efb96e8014c0aee603cafd.js": "/precache-manifest.a70a075c67efb96e8014c0aee603cafd.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.c3a27a85.chunk.css.map": "/static/css/main.c3a27a85.chunk.css.map",
-    "static/media/asteroids.png": "/static/media/asteroids.be7d6f96.png",
-    "static/media/climate-change.png": "/static/media/climate-change.ebe91587.png",
-    "static/media/css-specificity-calculator.png": "/static/media/css-specificity-calculator.cd6b38f5.png",
-    "static/media/google-labour-leadership.png": "/static/media/google-labour-leadership.6961979a.png",
-    "static/media/iplayer.png": "/static/media/iplayer.3bb23e3c.png",
-    "static/media/musical-twin-towns.png": "/static/media/musical-twin-towns.ed873a77.png",
-    "static/media/real-time-face-aging.png": "/static/media/real-time-face-aging.9c49e258.png",
-    "static/media/syria.png": "/static/media/syria.c6e7cb1e.png"
+    "static/css/main.2935d339.chunk.css.map": "/static/css/main.2935d339.chunk.css.map",
+    "static/js/2.000df468.chunk.js.LICENSE.txt": "/static/js/2.000df468.chunk.js.LICENSE.txt",
+    "static/media/asteroids.f2888a23.png": "/static/media/asteroids.f2888a23.png",
+    "static/media/climate-change.ff78c771.png": "/static/media/climate-change.ff78c771.png",
+    "static/media/css-specificity-calculator.e4f1784b.png": "/static/media/css-specificity-calculator.e4f1784b.png",
+    "static/media/google-labour-leadership.f47e0c88.png": "/static/media/google-labour-leadership.f47e0c88.png",
+    "static/media/iplayer.e14e079e.png": "/static/media/iplayer.e14e079e.png",
+    "static/media/musical-twin-towns.248a5021.png": "/static/media/musical-twin-towns.248a5021.png",
+    "static/media/real-time-face-aging.71f50455.png": "/static/media/real-time-face-aging.71f50455.png",
+    "static/media/syria.5ba637d4.png": "/static/media/syria.5ba637d4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bcc1d0a.js",
-    "static/js/2.b94c8d59.chunk.js",
-    "static/css/main.c3a27a85.chunk.css",
-    "static/js/main.a77616a6.chunk.js"
+    "static/js/runtime-main.d5a918a5.js",
+    "static/js/2.000df468.chunk.js",
+    "static/css/main.2935d339.chunk.css",
+    "static/js/main.5a46a96e.chunk.js"
   ]
 }
